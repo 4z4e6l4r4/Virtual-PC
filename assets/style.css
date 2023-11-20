@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+.mainWindow {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+}
+
+.gg-windows {
+  display: flex;
+  background: linear-gradient(to right, #ae00ffbb, #ff006f77);
+  height: 100vh;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  /* position: fixed; */
+}
+
+.gg-windows a {
+  cursor: pointer;
+}
