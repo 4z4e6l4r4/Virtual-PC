@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-
 }
 
 .mainWindow {
@@ -12,9 +11,16 @@
   align-items: center;
 }
 
+.bg-windows{
+  /* background: linear-gradient(to right, #00d5ff7b, #ff006f77, #9d00ff77); */
+  background-image: 
+  radial-gradient(circle at 50% 50%, 
+  #fbfaff 0, #f0f6ff 12.5%, #e8e4ff 25%, 
+  #d9f9eb 37.5%, #dbf2cd 50%, #ebe0c3 62.5%, 
+  #a6dcda 75%, #debccb 80.5%, #c7a6dc 100%);
+}
 .gg-windows {
   display: flex;
-  background: linear-gradient(to right, #ae00ffbb, #ff006f77);
   height: 100vh;
   text-align: center;
   align-items: center;
@@ -25,3 +31,42 @@
 .gg-windows a {
   cursor: pointer;
 }
+
+.btnW {
+  border: none;
+  background-color: #ffffff00;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 30px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.btnW:hover {
+  transform: scale(1.1); 
+  box-shadow: 0 0 10px #0000004d;
+}
+
+.inputW {
+  border: none;
+  background-color: #ffffff00;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 15px;
+  outline: none;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.inputW:hover {
+  transform: scale(1.01); 
+  box-shadow: 0 0 10px #0000004d;
+}
+
+.transparent-icon {
+  opacity: 0.19;
+}
+
+
+
+/* Progress Bar */
