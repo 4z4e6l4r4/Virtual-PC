@@ -4,6 +4,31 @@
   
 }
 
+body {
+  margin: 700px;
+  padding: 0;
+  background-image: url('/assets/images/space.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; 
+  font-family: Arial, sans-serif; 
+  /* For Desktop: */
+
+}
+
+/* ----------DESKTOP----------- */
+.desktop{
+  position: absolute;
+  padding: 0px;
+  transform: translateX(-690px) translateY(-680px);}
+
+
+
+
+
+
+
+/* ------------------ USER HTML */
 .mainWindow {
   margin: 0;
   padding: 0;
@@ -40,9 +65,16 @@
   cursor: pointer;
 }
 
+
+
+
+
+/* --BUTTONS-- */
+
 .btnW {
+  color:#401f51;
   border: none;
-  background-color: #ffffff00;
+  background-color: #ffffff18;
   padding-right: 10px;
   padding-left: 10px;
   padding-top: 5px;
@@ -52,13 +84,13 @@
   transition: transform 0.3s, box-shadow 0.3s;
 }
 .btnW:hover {
-  transform: scale(1.1);
+  transform: scale(1.0);
   box-shadow: 0 0 10px #0000004d;
 }
 
 .inputW {
   border: none;
-  background-color: #ffffff00;
+  background-color: #ffffff18;
   padding-right: 10px;
   padding-left: 10px;
   padding-top: 5px;
