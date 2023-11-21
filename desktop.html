@@ -17,7 +17,8 @@
     <title>User</title>
   </head>
 
-  <body style="background-color: #ff7fec10">
+  <body style="background-color: #ff7fec10 
+  ">
     <!-- Navbar -->
     <nav
       class="navbar navbar-expand-md fixed-bottom"
@@ -30,6 +31,7 @@
             type="button"
             class="btnW dropdown"
             data-bs-toggle="dropdown"
+            style="margin-left: 5px"
           >
             <i
               class="fab fa-windows"
@@ -95,13 +97,13 @@
         <form class="d-flex input-container" role="search">
           <i
             type="submit"
-            class="fa-solid fa-magnifying-glass"
-            style="font-size: 20px"
+            class="fa-solid fa-magnifying-glass fa-rotate-90"
+            style="font-size: 18px"
           ></i>
           <input
             class="btnS ms-3"
             type="search"
-            placeholder="Search"
+            placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Search"
             style="width: 220px"
           />
         </form>
@@ -109,54 +111,92 @@
         <!--Right Items  -->
         <div class="right-items-nav">
           <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"
+              ><i
+                class="fa-solid fa-microphone-lines"
+                style="color: #5a3f8d"
+              ></i
+            ></span>
+          </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">20.11.2023</a>
-            </li>
-          </ul>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 80px;">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 "">
+              <li class="nav-item">
+                <i
+                  class="fa-solid fa-microphone-lines"
+                  style="
+                    color: #401f51;
+                    margin-right: 10px;
+                    font-size: 20px;
+                    margin-top: 10px;
+                    cursor: pointer;
+                  "
+                ></i>
+              </li>
+              <li class="nav-item">
+                <i
+                  class="fa-solid fa-battery-half"
+                  style="
+                    color: #401f51;
+                    margin-right: 10px;
+                    font-size: 20px;
+                    margin-top: 10px;
+                    cursor: pointer;
+
+                  "
+                ></i>
+              </li>
+              <li class="nav-item">
+                <i
+                  class="fa-solid fa-volume-high"
+                  style="
+                    color: #401f51;
+                    margin-right: 5px;
+                    font-size: 20px;
+                    margin-top: 10px;
+                    cursor: pointer;
+                  "
+                ></i>
+              </li>
+
+              <li class="nav-item dropdown">
+                <div class="dropup">
+                  <button class="btnS" style="margin-top: 4px">TR</button>
+                  <div class="dropup-content btnS" style="opacity: 0.6">
+                    <a href="#link1">Arapça</a>
+                    <a href="#link2">İngilizce</a>
+                    <a href="#link3">Rusça</a>
+                  </div>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">20.11.2023</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        </div>
-        
       </div>
     </nav>
 
+    <!-- JS FONC -->
+    <script>
+ 
+
+
+
+      
+    </script>
+
+    <!-- JS CODES -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"

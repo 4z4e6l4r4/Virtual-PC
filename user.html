@@ -18,7 +18,10 @@
   </head>
 
   <body>
-    <div class="mainWindow bg-windows" style="display: flex; justify-content: center">
+    <div
+      class="mainWindow bg-windows"
+      style="display: flex; justify-content: center"
+    >
       <div class="col-3 align-items-center dis">
         <div class="text-center">
           <img
@@ -31,9 +34,10 @@
         </div>
 
         <form class="align-items-center">
-          <div class=" mt-2 text-center">
+          <div class="mt-2 text-center">
             <!-- inputa class verince yanyana geliyorlar -->
-            <input class="inputW"
+            <input
+              class="inputW"
               type="password"
               class="form-control mt-4"
               id="password"
@@ -49,18 +53,31 @@
       </div>
     </div>
 
+
+
+
+
+
+
+
+
+    
+
+    <!-- JS FONC -->
     <script>
       function checkPassword() {
         const getPassword = document.getElementById("password").value;
 
         if (getPassword == "ElDeVa1453") {
-                window.location.href = "./desktop.html";
+          window.location.href = "./desktop.html";
         } else {
           alert("Incorrect password. Please try again!");
         }
       }
     </script>
 
+
+<!-- JS Scripts -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
