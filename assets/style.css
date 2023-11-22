@@ -191,11 +191,12 @@
 }
 .fast li{
   border: none;
-  border-radius: 0;
+  border-radius: 10px;
+  
 }
 .fast li:hover{
   cursor: pointer;
-  background-color: #d6d1da;
+  background-color: #ac99bc;
 }
 .overlay {
   display: none;
