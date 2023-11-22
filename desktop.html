@@ -17,110 +17,1175 @@
     <title>User</title>
   </head>
 
-  <body style="background-color: #ff7fec10 ">
-<!-- Desktop Materials -->
-<div class="desktop">
-  <div class="card" style="width: 18rem;">
-    <div class="desktop-item">
-      <a href="#" class="btn btn-primary">
-        <i class="fa-solid fa-tv">My Computer</i>
-      </a>
-    </div>
-
-    
-  </div>
-</div>
-
-
-
-    <!-- Navbar -->
-    <nav
-      class="navbar navbar-expand-md fixed-bottom"
-      style="background-color: #ffffff39; border-radius: 150px"
-    >
-      <div class="navV">
-        <div class="dropup">
-          <button
-            role="button"
-            type="button"
-            class="btnS dropdown"
-            data-bs-toggle="dropdown"
-            style="margin-left: 5px"
-          >
-            <i
-              class="fab fa-windows"
-              style="font-size: 25px; padding-top: 2px; color: #401f51;"
-            ></i>
-          </button>
-          <div
-            class="dropdown-menu"
-            style="
-              margin-bottom: 9px;
-              border-bottom-left-radius: 20px;
-              border-top-right-radius: 20px;
-              width: 600px;
-            "
-          >
-            <ul style="padding-left: 0px">
-              <li class="dropdown-item">
-                <i
-                  class="fa-solid fa-bars"
+  <body style="background-color: #ff7fec10">
+    <div class="general row">
+      <div
+        class="modal fade"
+        id="modalpc"
+        tabindex="-1"
+        role="dialog"
+        aria-hidden="true"
+        style="background-color: transparent !important"
+      >
+        <div class="modal-dialog w-100 h-100" role="document">
+          <div class="modal-content w-100 h-75">
+            <div class="modal-header p-0">
+              <span
+                ><span
+                  >
+                  <i class="fa-solid fa-tv ms-2" style="color: #401f51;"></i>
+              
+              </span>
+                <span style="font-size: 12px"> My Computer</span></span
+              >
+              <span>
+                <button
+                  class="close btn btn-danger btn-sm me-1 p-0 border-0"
                   style="
-                    color: #540e5d;
-                    font-size: 20px;
-                    margin-top: 0px;
-                    margin-bottom: 220px;
-                    padding-top: 19px;
+                    background-color: transparent;
+                    color: #401f51;
+                    font-size: 22px;
                   "
-                ></i>
-              </li>
-              <li class="dropdown-item">
-                <img
-                  src="/assets/images/user.jpg"
-                  style="border-radius: 50%; width: 30px; padding-top: 19px"
-                />
-              </li>
-              <li class="dropdown-item">
-                <i
-                  class="fa-solid fa-file"
-                  style="color: #540e5d; font-size: 20px; padding-top: 19px"
-                ></i>
-              </li>
-              <li class="dropdown-item">
-                <i
-                  class="fa-solid fa-image"
-                  style="color: #540e5d; font-size: 20px; padding-top: 19px"
-                ></i>
-              </li>
-              <li class="dropdown-item">
-                <i
-                  class="fa-solid fa-gear"
-                  style="color: #540e5d; font-size: 20px; padding-top: 19px"
-                ></i>
-              </li>
-              <li class="dropdown-item">
-                <i
-                  class="fa-solid fa-power-off"
-                  style="color: #540e5d; font-size: 20px; padding-top: 19px"
-                ></i>
-              </li>
-            </ul>
+                  type="button"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <i class="fa-solid fa-window-minimize fa-xs"></i>
+                </button>
+
+                <button
+                  class="close btn btn-danger btn-sm mt-1 p-0 border-0"
+                  style="
+                    background-color: transparent;
+                    color: #401f51;
+                    font-size: 22px;
+                  "
+                  type="button"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <i
+                    class="fa-regular fa-window-maximize fa-xs"
+                    style="color: #04152f"
+                  ></i>
+                </button>
+
+                <button
+                  id="bilgisayarimkapa"
+                  class="close btn btn-danger btn-sm m-1 me-2 p-0 border-0"
+                  style="
+                    background-color: transparent;
+                    color: #401f51;
+                    font-size: 22px;
+                  "
+                  type="button"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                >
+                  &times;
+                </button>
+              </span>
+            </div>
+
+            <div class="modal-body row">
+              <div class="col-2 h-100 p-0">
+                <h6>
+                  &nbsp;&nbsp;&nbsp;<i
+                    class="fa-regular fa-star"
+                    style="color: #f2ea02"
+                  ></i>
+                  Fast Access
+                </h6>
+                <ul class="list-group hizlilist">
+
+                  <li class="list-group-item">
+                    <a
+                      href=""
+                      class="text-dark text-decoration-none"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modaldivExcel"
+                      >Pictures</a
+                    >
+                  </li>
+
+                  <li class="list-group-item">
+                    <a
+                      href=""
+                      class="text-dark text-decoration-none"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modaldivWord"
+                      >Apps</a
+                    >
+                  </li>
+
+                  <li class="list-group-item">
+                    <a
+                      href=""
+                      class="text-dark text-decoration-none"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modaldivVscode"
+                      >TrashBox</a
+                    >
+                  </li>
+
+                  <li class="list-group-item">
+                    <a
+                      href=""
+                      class="text-dark text-decoration-none"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modaldivbelgelerim"
+                      >Documents</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-10 h-100">
+                <a href="#" class="btn">
+                  <h6>
+                    <i
+                      class="fa-solid fa-angle-down"
+                      style="color: #d0d3d7"
+                    ></i>
+                    Cihazlar ve Sürücüler
+                  </h6>
+                </a>
+                <div>
+                  <i class="fa-solid fa-floppy-disk ms-4" style="font-size: 55px; color: #401f51;"></i>
+                  <h5 style="font-size: 15px;">Local Folder (C:)</h5>
+                  <div
+                    class="progress mt-1"
+                    role="progressbar"
+                    aria-label="Animated striped example"
+                    aria-valuenow="0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style="margin-top: 40px; width: 130px"
+                  >
+                    <div
+                      id="progressBar"
+                      class="bg-success progress-bar progress-bar-striped "
+                      style="width: 54%; color: #401f51; "
+                    ></div>
+                  </div>
+                  <span style="font-size: 12px">378 GB Full,472 GB Empty</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <!-- Seacrh -->
-        <form class="d-flex input-container" role="search">
-          <i
-            type="submit"
-            class="fa-solid fa-magnifying-glass fa-rotate-90"
-            style="font-size: 18px"
-          ></i>
-          <input
-            class="btnW ms-3"
-            type="search"
-            placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Search"
-            style="width: 220px"
-          />
-        </form>
+      </div>
+
+
+      <!-- APPS MODALS -->
+      <div
+        class="modal fade"
+        id="modalapps"
+        tabindex="-1"
+        role="dialog"
+        aria-hidden="true"
+        style="background-color: transparent !important"
+      >
+        <div class="modal-dialog w-100 h-100" role="document">
+          <div class="modal-content w-100 h-75">
+            <div class="modal-header p-0">
+              <span
+                ><span
+                  >
+                  <i class="fa-solid fa-border-none ms-2" style="color: #401f51; font-size: 30px;"></i>
+                  
+              </span>
+                <span class="ms-2" style="font-size: 13px;"> Apps</span></span
+              >
+              <span>
+                <button
+                  class="close btn btn-danger btn-sm me-1 p-0 border-0"
+                  style="
+                    background-color: transparent;
+                    color: #650101;
+                    font-size: 22px;
+                  "
+                  type="button"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <i class="fa-solid fa-window-minimize fa-xs"></i>
+                </button>
+
+                <button
+                  class="close btn btn-danger btn-sm mt-1 p-0 border-0"
+                  style="
+                    background-color: transparent;
+                    color: #650101;
+                    font-size: 25px;
+                  "
+                  type="button"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <i
+                    class="fa-regular fa-window-maximize fa-xs"
+                    style="color: #650101"
+                  ></i>
+                </button>
+
+                <button
+                  id="appsOff"
+                  class="close btn btn-danger btn-sm m-1 me-2 p-0 border-0"
+                  style="
+                    background-color: transparent;
+                    color: #650101;
+                    font-size: 25px;
+                  "
+                  type="button"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                >
+                  &times;
+                </button>
+              </span>
+            </div>
+
+            <div class="modal-body row">
+              <div class="col-2 h-100 p-0">
+                <h6>
+                  &nbsp;&nbsp;&nbsp;<i
+                    class="fa-regular fa-star"
+                    style="color: #b7b103"
+                  ></i>
+                  Hızlı Erişim
+                </h6>
+                <ul class="list-group hizlilist">
+                  <li class="list-group-item">
+                    <a
+                      href=""
+                      class="text-dark text-decoration-none"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modaldivExcel"
+                      >My Computer</a
+                    >
+                  </li>
+                  <li class="list-group-item">
+                    <a
+                      href=""
+                      class="text-dark text-decoration-none"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modaldivWord"
+                      >Pictures</a
+                    >
+                  </li>
+                  <li class="list-group-item">
+                    <a
+                      href=""
+                      class="text-dark text-decoration-none"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modaldivVscode"
+                      >TrashBox</a
+                    >
+                  </li>
+                  <li class="list-group-item">
+                    <a
+                      href=""
+                      class="text-dark text-decoration-none"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modaldivbelgelerim"
+                      >Documents</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="col-10 h-100">
+                <a href="#" class="btn">
+                  <h6>
+                    <i
+                      class="fa-solid fa-angle-down"
+                      style="color: #401f51;"
+                    ></i>
+                    Apps
+                  </h6>
+                </a>
+
+                <!-- -Documents Index -->
+                <div class="row ps-3" style="height: 500px">
+
+                  <div class="col-2">
+                    <a href="" class="text-decoration-none text-dark"
+                      >
+                      <i class="fa-solid fa-file-pdf ms-4" style="font-size: 60px; color: #401f51;"></i>
+                      <h6 class="pt-2">Adobe Acrobat</h6></a
+                    >
+                  </div>
+
+                  <div class="col-2">
+                    <a href="" class="text-decoration-none text-dark"
+                      >
+                      <i class="fa-brands fa-wordpress-simple ms-3" style="font-size: 60px; color: #401f51;"></i>
+                      <h6 class="ps-4 pt-2">Word</h6></a
+                    >
+                  </div>
+
+                  <div class="col-2">
+                    <a href="" class="text-decoration-none text-dark"
+                      >
+                      <i class="fa-solid fa-file-powerpoint ms-3" style="font-size: 60px; color: #401f51;"></i>
+                      <h6 class="ps-1 pt-2">PowerPoint</h6></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="modaldocs"
+        tabindex="-1"
+        role="dialog"
+        aria-hidden="true"
+        style="background-color: transparent !important"
+      >
+
+
+        <div class="modal-dialog w-100 h-100" role="document">
+          <div class="modal-content w-100 h-75">
+            <div class="modal-header p-0">
+              <span
+                ><span
+                  >
+                  <i class="fa-regular fa-folder-open ms-2"></i>
+              </span>
+                <span style="font-size: 12px"> Documents</span></span
+              >
+              <span>
+                <button
+                  class="close btn btn-danger btn-sm me-1 p-0 border-0"
+                  style="
+                    background-color: transparent;
+                    color: #401f51;
+                    font-size: 22px;
+                  "
+                  type="button"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <i class="fa-solid fa-window-minimize fa-xs"></i>
+                </button>
+
+                <button
+                  class="close btn btn-danger btn-sm mt-1 p-0 border-0"
+                  style="
+                    background-color: transparent;
+                    color: #401f51;
+                    font-size: 22px;
+                  "
+                  type="button"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <i
+                    class="fa-regular fa-window-maximize fa-xs"
+                    style="color: #04152f"
+                  ></i>
+                </button>
+
+                <button
+                  id="bilgisayarimkapa"
+                  class="close btn btn-danger btn-sm m-1 me-2 p-0 border-0"
+                  style="
+                    background-color: transparent;
+                    color: #401f51;
+                    font-size: 22px;
+                  "
+                  type="button"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                >
+                  &times;
+                </button>
+              </span>
+            </div>
+
+            <!-- MODAL STRUCTURE -->
+            <div class="modal-body row">
+
+              <div class="col-2 h-100 p-0">
+                <h6>
+                  &nbsp;&nbsp;&nbsp;<i
+                    class="fa-regular fa-star"
+                    style="color: #f2ea02"
+                  ></i>
+                  Hızlı Erişim
+                </h6>
+                <ul class="list-group hizlilist">
+                  <li class="list-group-item">
+                    <a
+                      href=""
+                      class="text-dark text-decoration-none"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modaldivExcel"
+                      >My Computer</a
+                    >
+                  </li>
+                  <li class="list-group-item">
+                    <a
+                      href=""
+                      class="text-dark text-decoration-none"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modaldivWord"
+                      >Apps</a
+                    >
+                  </li>
+                  <li class="list-group-item">
+                    <a
+                      href=""
+                      class="text-dark text-decoration-none"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modaldivVscode"
+                      >TrashBox</a
+                    >
+                  </li>
+                  <li class="list-group-item">
+                    <a
+                      href=""
+                      class="text-dark text-decoration-none"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modaldivbelgelerim"
+                      >Pictures</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <!-- DOCUMENTS MODUL -->
+              <div class="col-10 h-100">
+                <a href="#" class="btn">
+                  <h6>
+                    <i class="fa-regular fa-folder-open" style="color: #401f51; font-size: 25px"></i>
+                    Documents
+                  </h6>
+                </a>
+<!-- Document List -->
+                <div>
+                  <ul class="list-group fast" id="listem">
+                    
+                    <li class="list-group-item">
+                      <a
+                        href="#"
+                        class="text-decoration-none text-dark"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modaldivnot"
+                        >
+                        <i class="fa-solid fa-file-pdf me-1" style="color: #401f51; font-size: 25px"></i>
+                       
+                        Fundamentals Of Database Usage.pdf</a
+                      >
+                    </li>
+
+                    <li class="list-group-item">
+                      <a
+                        href=""
+                        class="text-decoration-none text-dark"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modaldivword"
+                        >
+                        <i class="fa-regular fa-file-word me-1" style="color: #401f51; font-size: 25px"></i>
+                        Article.docx</a
+                      >
+                    </li>
+
+                    <li class="list-group-item">
+                      <a
+                        href=""
+                        class="text-decoration-none text-dark"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modaldivresim4"> 
+                        <i class="fa-solid fa-image me-1" style="color: #401f51; font-size: 20px"></i>
+                        azra.jpeg</a
+                      >
+                    </li>
+
+                    <li class="list-group-item">
+                      <a
+                        href=""
+                        class="text-decoration-none text-dark"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modaldivexcel"
+                        >
+                        <i class="fa-solid fa-film me-1" style="color: #401f51;font-size: 20px"></i>
+                        movie.mp4
+                      </a>
+                    </li>
+
+                    <li class="list-group-item">
+                      <a
+                        href=""
+                        class="text-decoration-none text-dark"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modaldivresim3"
+                        >
+                        <i class="fa-solid fa-record-vinyl me-1" style="color: #401f51; font-size: 20px"></i>
+                        voice.mp3</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="modalpics"
+        tabindex="-1"
+        role="dialog"
+        aria-hidden="true"
+        style="background-color: transparent !important"
+      >
+        <div class="modal-dialog w-100 h-100" role="document">
+          <div class="modal-content w-100 h-75">
+            <div class="modal-header p-0">
+              <span
+                ><span
+                  >
+                  <img
+                    src="assets/images/pc.png"
+                    class="img-fluid ps-2 justify-content-start"
+                    height="27px"
+                    width="27px"
+                    alt=""
+                />
+
+              </span>
+                <span style="font-size: 12px"> Pictures</span></span
+              >
+              <span>
+                <button
+                  class="close btn btn-danger btn-sm me-1 p-0 border-0"
+                  style="
+                    background-color: transparent;
+                    color: #401f51;
+                    font-size: 22px;
+                  "
+                  type="button"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <i class="fa-solid fa-window-minimize fa-xs"></i>
+                </button>
+
+                <button
+                  class="close btn btn-danger btn-sm mt-1 p-0 border-0"
+                  style="
+                    background-color: transparent;
+                    color: #401f51;
+                    font-size: 22px;
+                  "
+                  type="button"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <i
+                    class="fa-regular fa-window-maximize fa-xs"
+                    style="color: #04152f"
+                  ></i>
+                </button>
+
+                <button
+                  id="bilgisayarimkapa"
+                  class="close btn btn-danger btn-sm m-1 me-2 p-0 border-0"
+                  style="
+                    background-color: transparent;
+                    color: #401f51;
+                    font-size: 22px;
+                  "
+                  type="button"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                >
+                  &times;
+                </button>
+              </span>
+            </div>
+            <div class="modal-body row">
+              <div class="col-2 h-100 p-0">
+                <h6>
+                  &nbsp;&nbsp;&nbsp;<i
+                    class="fa-regular fa-star"
+                    style="color: #f2ea02"
+                  ></i>
+                  Hızlı Erişim
+                </h6>
+                <ul class="list-group hizlilist">
+                  <li class="list-group-item">
+                    <a
+                      href=""
+                      class="text-dark text-decoration-none"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modaldivExcel"
+                      >My Computer</a
+                    >
+                  </li>
+                  <li class="list-group-item">
+                    <a
+                      href=""
+                      class="text-dark text-decoration-none"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modaldivWord"
+                      >Apps</a
+                    >
+                  </li>
+                  <li class="list-group-item">
+                    <a
+                      href=""
+                      class="text-dark text-decoration-none"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modaldivVscode"
+                      >TrashBox</a
+                    >
+                  </li>
+                  <li class="list-group-item">
+                    <a
+                      href=""
+                      class="text-dark text-decoration-none"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modaldivbelgelerim"
+                      >Documents</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="col-10 h-100">
+                <a href="#" class="btn">
+                  <h6>
+                    <i
+                      class="fa-solid fa-angle-down"
+                      style="color: #d0d3d7"
+                    ></i>
+                    Resimler
+                  </h6>
+                </a>
+
+                <div class="row ps-3 mt-3">
+                  <div class="col-1 me-3" style="height: 70px">
+                    <a
+                      href="#"
+                      class="text-decoration-none text-dark"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modaldivresim1"
+                    >
+                      <img
+                        src="./assets/images/image 1.png"
+                        class="img-fluid h-100 ps-2 rounded"
+                        alt=""
+                      />
+                      <span style="font-size: 11px">Eye's Abyss.png</span>
+                    </a>
+                  </div>
+
+                  <div class="col-1 me-3 text-center" style="height: 70px">
+                    <a
+                      href="#"
+                      class="text-decoration-none text-dark"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modaldivresim2"
+                    >
+                      <img
+                        src="./assets/images/image 2.png"
+                        class="img-fluid h-100 rounded"
+                        alt=""
+                      />
+                      <span style="font-size: 11px">Eye's İlluminate.png</span>
+                    </a>
+                  </div>
+
+                  <div class="col-1 me-3" style="height: 70px">
+                    <a
+                      href="#"
+                      class="text-decoration-none text-dark"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modaldivresim3"
+                    >
+                      <img
+                        src="./assets/images/image 3.png"
+                        class="img-fluid h-100 rounded"
+                        alt=""
+                      />
+                      <span style="font-size: 11px">Hands Power.png</span>
+                    </a>
+                  </div>
+
+                  <div class="col-1 me-3" style="height: 70px">
+                    <a
+                      href="#"
+                      class="text-decoration-none text-dark"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modaldivresim4"
+                    >
+                      <img
+                        src="./assets/images/image 4.png"
+                        class="img-fluid h-100 rounded"
+                        alt=""
+                      />
+                      <span style="font-size: 11px">Horse.png</span>
+                    </a>
+                  </div>
+
+                  <div class="col-1 me-3 text-center" style="height: 70px">
+                    <a
+                      href="#"
+                      class="text-decoration-none text-dark"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modaldivresim5"
+                    >
+                      <img
+                        src="./assets/images/image 5.png"
+                        class="img-fluid h-100 rounded"
+                        alt=""
+                      />
+                      <span style="font-size: 11px">Whales.png</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="modaldivresim1"
+        tabindex="-1"
+        role="dialog"
+        aria-hidden="true"
+        style="background-color: transparent !important"
+      >
+        <div class="modal-dialog w-100 h-100" role="document">
+          <div class="modal-content w-100 h-75">
+            <div class="modal-header p-0">
+              <span style="font-size: 12px" class="ps-3"> Eye's Abyss.png</span>
+
+              <button
+                id="resim1kapa"
+                class="close btn btn-danger btn-sm m-1 me-2 p-0 border-0"
+                style="
+                  background-color: transparent;
+                  color: red;
+                  font-size: 22px;
+                "
+                type="button"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              >
+                &times;
+              </button>
+            </div>
+            <div
+              class="modal-body w-100 h-75"
+              style="padding: 0 !important; margin: 0%"
+            >
+              <img
+                src="./assets/images/image 1.png"
+                alt=""
+                class="w-100 h-100"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="modaldivresim2"
+        tabindex="-1"
+        role="dialog"
+        aria-hidden="true"
+        style="background-color: transparent !important"
+      >
+        <div class="modal-dialog w-100 h-100" role="document">
+          <div class="modal-content w-100 h-75">
+            <div class="modal-header p-0">
+              <span style="font-size: 12px" class="ps-3">
+                Eye's Illuminate.png</span
+              >
+
+              <button
+                class="close btn btn-danger btn-sm m-1 me-2 p-0 border-0"
+                style="
+                  background-color: transparent;
+                  color: red;
+                  font-size: 22px;
+                "
+                type="button"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              >
+                &times;
+              </button>
+            </div>
+            <div
+              class="modal-body w-100 h-75"
+              style="padding: 0 !important; margin: 0%"
+            >
+              <img
+                src="./assets/images/image 2.png"
+                alt=""
+                class="w-100 h-100"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="modaldivresim3"
+        tabindex="-1"
+        role="dialog"
+        aria-hidden="true"
+        style="background-color: transparent !important"
+      >
+        <div class="modal-dialog w-100 h-100" role="document">
+          <div class="modal-content w-100 h-75">
+            <div class="modal-header p-0">
+              <span style="font-size: 12px" class="ps-3"> Hands Power.png</span>
+
+              <button
+                id="resim1kapa"
+                class="close btn btn-danger btn-sm m-1 me-2 p-0 border-0"
+                style="
+                  background-color: transparent;
+                  color: red;
+                  font-size: 22px;
+                "
+                type="button"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              >
+                &times;
+              </button>
+            </div>
+            <div
+              class="modal-body w-100 h-75"
+              style="padding: 0 !important; margin: 0%"
+            >
+              <img
+                src="./assets/images/image 3.png"
+                alt=""
+                class="w-100 h-100"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="modaldivresim4"
+        tabindex="-1"
+        role="dialog"
+        aria-hidden="true"
+        style="background-color: transparent !important"
+      >
+        <div class="modal-dialog w-100 h-100" role="document">
+          <div class="modal-content w-100 h-75">
+            <div class="modal-header p-0">
+              <span style="font-size: 12px" class="ps-3"> Horse.png</span>
+
+              <button
+                id="resim1kapa"
+                class="close btn btn-danger btn-sm m-1 me-2 p-0 border-0"
+                style="
+                  background-color: transparent;
+                  color: #401f51;
+                  font-size: 22px;
+                "
+                type="button"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              >
+                &times;
+              </button>
+            </div>
+            <div
+              class="modal-body w-100 h-75"
+              style="padding: 0 !important; margin: 0%"
+            >
+              <img
+                src="./assets/images/image 4.png"
+                alt=""
+                class="w-100 h-100"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="modaldivresim5"
+        tabindex="-1"
+        role="dialog"
+        aria-hidden="true"
+        style="background-color: transparent !important"
+      >
+        <div class="modal-dialog w-100 h-100" role="document">
+          <div class="modal-content w-100 h-75">
+            <div class="modal-header p-0">
+              <span style="font-size: 12px" class="ps-3"> Whales.png</span>
+
+              <button
+                id="resim1kapa"
+                class="close btn btn-danger btn-sm m-1 me-2 p-0 border-0"
+                style="
+                  background-color: transparent;
+                  color: #401f51;
+                  font-size: 22px;
+                "
+                type="button"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              >
+                &times;
+              </button>
+            </div>
+            <div
+              class="modal-body w-100 h-75"
+              style="padding: 0 !important; margin: 0%"
+            >
+              <img
+                src="./assets/images/image 5.png"
+                alt=""
+                class="w-100 h-100"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Desktop Card -->
+      <div class="col-lg-2 ps-3 pt-4">    
+        <div class="col-7 row ms-2 mb-3">
+
+        <!-- My Computer Card -->
+          <div
+            class="card col-8 ms-2 mt-3"
+            style="background-color: transparent; border: none"
+          >
+            <div
+              class="card-body p-0 row justify-content-center align-items-center"
+            >
+              <a
+                href=""
+                class="btn"
+                data-bs-toggle="modal"
+                data-bs-target="#modalpc"
+                id="bilgisayarim"
+              >
+              <i class="fa-solid fa-tv" style="font-size: 50px; color: #401f51;"></i>
+                <h5 style="white-space: nowrap; font-size: 15px; margin-left: -12px; margin-top: 5px;">
+                  My Computer
+                </h5>
+              </a>
+            </div>
+          </div>
+
+          <!-- Apps Card -->
+          <div
+            class="card col-8 ms-2 mt-4 mb-2"
+            style="background-color: transparent; border: none"
+          >
+            <div
+              class="card-body p-0 row align-items-center"
+              style="background-color: transparent; border: none"
+            >
+              <a
+                href="#"
+                class="text-decoration-none text-dark"
+                data-bs-toggle="modal"
+                data-bs-target="#modalapps"
+                style="outline: none !important; border: none"
+                id="uygulamalarim"
+              >
+              <i class="fa-solid fa-border-none"  style="font-size: 65px; color: #401f51;"></i>
+                <h5 style="white-space: nowrap; font-size: 15px; margin-left: 10px; margin-top: 5px;">Apps</h5>
+              </a>
+            </div>
+          </div>
+
+          <!-- TrashBox Card -->
+          <div
+            class="card col-8 ms-1 mt-4 mb-3"
+            style="background-color: transparent; border: none"
+          >
+            <div
+              class="card-body p-0 row align-items-center justify-content-center"
+            >
+              <a
+                href="#"
+                class="text-decoration-none text-dark"
+                data-bs-toggle="modal"
+                data-bs-target="#modaldivword"
+                style="outline: none !important; border: none"
+              >
+              <i class="fa-regular fa-trash-can "  style="font-size: 45px; color: #401f51; margin-left: 10px;"></i>
+                <h5
+                  class="card-text text-center ps-3"
+                  style="white-space: nowrap; font-size: 15px; margin-left: -20px; margin-top: 5px;"
+                >
+                  TrashBox
+                </h5>
+              </a>
+            </div>
+          </div>
+
+          <!-- Documents Card -->
+          <div
+            class="card col-8 ms-1 mt-4"
+            style="background-color: transparent; border: none"
+          >
+            <div
+              class="card-body p-0 row justify-content-center align-items-center"
+            >
+              <a
+                href=""
+                class="btn"
+                data-bs-toggle="modal"
+                data-bs-target="#modaldocs"
+                id="belgelerim"
+              >
+              <i class="fa-regular fa-folder-open"  style="font-size: 45px; color: #401f51; margin-left: 10px;"></i>
+                <h5 class="card-text text-center" style="white-space: nowrap; font-size: 15px; margin-left: -5px; margin-top: 5px;">
+                  Documents
+                </h5>
+              </a>
+            </div>
+          </div>
+
+          <!-- Pictures Card -->
+          <div
+            class="card col-8 ms-0 mt-4"
+            style="background-color: transparent; border: none"
+          >
+            <div
+              class="card-body p-0 row justify-content-center align-items-center"
+            >
+              <a
+                href=""
+                class="btn"
+                data-bs-toggle="modal"
+                data-bs-target="#modalpics"
+                id="resimler"
+              >
+              <i class="fa-regular fa-images"  style="font-size: 45px; color: #401f51; margin-left: 5px;"></i>
+                <h5 class="card-text text-center"  style="white-space: nowrap; font-size: 15px; margin-left: 5px; margin-top: 5px;">
+                  Pictures
+                </h5>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Navbar -->
+      <nav
+        class="navbar navbar-expand-md fixed-bottom justify-content-between"
+        style="background-color: #ffffff39; border-radius: 150px"
+      >
+        <div class="d-flex">
+          <div class="dropup">
+            <button
+              role="button"
+              type="button"
+              class="btnS dropdown"
+              data-bs-toggle="dropdown"
+              style="margin-left: 5px"
+            >
+              <i
+                class="fab fa-windows"
+                style="font-size: 25px; padding-top: 2px; color: #401f51"
+              ></i>
+            </button>
+            <div
+              class="dropdown-menu"
+              style="
+                margin-bottom: 9px;
+                border-bottom-left-radius: 20px;
+                border-top-right-radius: 20px;
+                width: 600px;
+              "
+            >
+              <ul style="padding-left: 0px">
+                <li class="dropdown-item">
+                  <i
+                    class="fa-solid fa-bars"
+                    style="
+                      color: #540e5d;
+                      font-size: 20px;
+                      margin-top: 0px;
+                      margin-bottom: 220px;
+                      padding-top: 19px;
+                    "
+                  ></i>
+                </li>
+                <li class="dropdown-item">
+                  <img
+                    src="/assets/images/user.jpg"
+                    style="border-radius: 50%; width: 30px; padding-top: 19px"
+                  />
+                </li>
+                <li class="dropdown-item">
+                  <i
+                    class="fa-solid fa-file"
+                    style="color: #540e5d; font-size: 20px; padding-top: 19px"
+                  ></i>
+                </li>
+                <li class="dropdown-item">
+                  <i
+                    class="fa-solid fa-image"
+                    style="color: #540e5d; font-size: 20px; padding-top: 19px"
+                  ></i>
+                </li>
+                <li class="dropdown-item">
+                  <i
+                    class="fa-solid fa-gear"
+                    style="color: #540e5d; font-size: 20px; padding-top: 19px"
+                  ></i>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#" onclick="shutdownComputer()">
+                    <i
+                      class="fa-solid fa-power-off"
+                      style="color: #540e5d; font-size: 20px; padding-top: 19px"
+                    ></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Seacrh -->
+          <form class="d-flex input-container" role="search">
+            <i
+              type="submit"
+              class="fa-solid fa-magnifying-glass fa-rotate-90"
+              style="font-size: 18px"
+            ></i>
+            <input
+              class="btnW ms-3"
+              type="search"
+              placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Search"
+              style="width: 220px"
+            />
+          </form>
+          <div id="newmenu"></div>
+        </div>
 
         <!--Right Items  -->
         <div class="right-items-nav">
@@ -141,8 +1206,12 @@
             ></span>
           </button>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 65px;">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 " >
+          <div
+            class="collapse navbar-collapse"
+            id="navbarSupportedContent"
+            style="margin-left: 65px"
+          >
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <i
                   class="fa-solid fa-microphone-lines"
@@ -164,7 +1233,6 @@
                     font-size: 20px;
                     margin-top: 10px;
                     cursor: pointer;
-
                   "
                 ></i>
               </li>
@@ -181,33 +1249,42 @@
                 ></i>
               </li>
 
-              <li class="nav-item dropdown" >
+              <li class="nav-item dropdown">
                 <div class="dropup">
                   <button class="btnS" style="margin-top: 4px">TR</button>
-                  <div class="dropup-content btnS" style="opacity: 0.6; margin-bottom: 10px;">
-                    <a href="#link1" style="border-radius: 20px;">Arapça</a>
-                    <a href="#link2" style="border-radius: 20px;">İngilizce</a>
-                    <a href="#link3" style="border-radius: 20px;">Rusça</a>
+                  <div
+                    class="dropup-content btnS"
+                    style="opacity: 0.6; margin-bottom: 10px"
+                  >
+                    <a href="#link1" style="border-radius: 20px">Arapça</a>
+                    <a href="#link2" style="border-radius: 20px">İngilizce</a>
+                    <a href="#link3" style="border-radius: 20px">Rusça</a>
                   </div>
                 </div>
               </li>
 
-              <li class="nav-item" style="margin-left: 10px;">
+              <li class="nav-item" style="margin-left: 10px">
                 <a class="nav-link disabled" aria-disabled="true">20.11.2023</a>
               </li>
             </ul>
           </div>
         </div>
+      </nav>
+      <div id="overlay" class="overlay">
+        <div class="spinner"></div>
       </div>
-    </nav>
+    </div>
+
 
     <!-- JS FONC -->
     <script>
- 
-
-
-
-      
+      function shutdownComputer() {
+        var overlay = document.getElementById("overlay");
+        overlay.style.display = "flex";
+        setTimeout(() => {
+          window.location.href = "./power.html";
+        }, 3000);
+      }
     </script>
 
     <!-- JS CODES -->
